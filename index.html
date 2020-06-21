@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <section class=" container">
+            <P class="p-head mt-4">PROFILE</P>
+            <div class=" row">
+
+                <div class=" col-lg-8 col-md-12 mt-4 bg-mine pt-3 border-white rounded-lg">
+
+                    <div class=" container-fluid pb-5">
+                        <form id="form-profile" method="" action="" class="">
+                                <div class=" row">
+
+                                    <div class="col-lg-6 col-md-12">
+                                        <div>
+                                            <label>Gender</label>
+                                            <select class=" form-control" required name="gender">
+
+                                                <option>Male</option>
+                                                <option>Female</option>
+
+                                            </select>
+                                            
+                                            <label class="mt-3">First name</label>
+                                            
+                                            <input class=" form-control" name="firstName" type="text" required/>
+                                            
+                                            <label class="mt-3">Birthday</label>
+                                            
+                                            <input type="date" name="birthdate" class=" form-control" required/>
+                                            
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class=" col-lg-6 col-md-12">
+
+                                        <div>
+                                            <label>E-mail</label>
+                                            
+                                            <input id="email-input" type="email" name="email" class=" form-control" required/>
+                                            <label id="email-label" class=" text-danger warning-regex hide">This email is invalid</label>
+                                
+                                            
+                                            <label class="mt-3">Last name</label> 
+                                            <input type="text" name="lastName" class=" form-control" required/>
+                                            
+                                            <label class="mt-3">Phone</label> 
+                                            <input id="phone-input" name="phone" class=" form-control" required placeholder="Phone number"/>
+                                            <label class=" text-danger warning-regex hide" id="phone-label">This phone number is invalid, it must be an egyptian number</label>
+                                        </div>
+
+                                    </div>
+                                            
+                                    
+                                </div>
+                                <label class="mt-3">Address</label>
+                                <input id="address-input" type="text" name="address" required class=" form-control" placeholder="Add a new address"/>
+                                <label id="address-label" class=" text-danger warning-regex hide">Ay 7aga</label>
+                                <div class=" d-flex justify-content-center align-content-center mt-5">
+                                    <button class="rounded-pill btn-mine">Confirm</button>
+                                </div>
+                        </form>
+                    </div>
+
+    
+                   
+                </div>
+
+                <div class="col-lg-4 col-md-12 border-white rounded-lg">
+
+                    <div class=" container bg-mine mt-4 pb-5 pt-3">
+                    <p>Profile picture</p>
+                    <div class=" text-center">
+                        <i class="far fa-user fa-9x mine text-white p-5 d-block w-75 m-auto"></i>
+                        
+                        <label class="btn-default btn-file border mt-5 rounded-pill browse-mine">
+                            Click here to upload image <input type="file" style="display: none;">
+                        </label>
+                        
+                        <button id="changePass" class=" rounded-pill mt-3 btn-profile1">Change password</button>
+                    </div>
+                        <div class="hide" id="showChangePass">
+                            <form method="POST" action="">
+
+                                <label class="mt-3">Old password</label> <br>
+                                <input class=" form-control" name="oldPassword" type="password"/>
+                                <br>
+                                <label class="">New password</label> <br>
+                                <input class=" form-control" name="newPassword" type="password" id="newPass"/>
+                                <label id="passControl" class=" text-danger warning-regex hide">Your password must contain at least eight characters, letters including at least one number</label>
+                                <br>
+                                <label class="">Confirm new password</label> <br>
+                                <input class=" form-control" name="confirmNewPass" type="password" id="newPassConfirm"/>
+                                <label id="passControlMatch" class=" text-danger warning-regex hide">The two passwords don't match</label>
+                                <br>
+                                <div class=" d-flex justify-content-center">
+                                    <button id="confirmChangePass" class="rounded-pill btn-mine">Confirm</button>
+                                </div>
+
+                            </form>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

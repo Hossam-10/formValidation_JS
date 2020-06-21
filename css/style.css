@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;;
+    color: #495057;
+}
+body
+{
+    background-color: #F6F6F9;
+}
+
+.p-head
+{
+    font-weight: 600;
+    color: #2b4d46;
+}
+.btn-mine
+{
+    background-color: #49D4BE;
+    color: white;
+    padding: 9px 50px;
+    border: transparent;
+}
+.bg-mine
+{
+    background-color: white;
+}
+.mine
+{
+    background-color: #68DBC9;
+}
+.browse-mine
+{
+    background-color: #49D4BE;
+    color: white;
+    padding: 9px 20px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.btn-profile1
+{
+    padding: 9px 60px;
+    color: white;
+    border: transparent;
+    background-color: #23272B;
+}
+
+.footer-p
+{
+    color: #74788d;
+    font-size: 12px;
+}
+
+.hide
+{
+    display: none;
+}
+.show
+{
+    display: block;
+}
+.warning-regex
+{
+    font-size: 14;
+}
